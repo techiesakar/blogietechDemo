@@ -1,0 +1,77 @@
+.content-wrapper {
+    margin-top: -90px;
+    z-index: 1000;
+    position: relative;
+}
+
+.featured.grid {
+    margin-bottom: 8px;
+}
+
+.post-categories {
+    margin-top: 8px;
+}
+
+article {
+    background: #fff;
+    padding: 24px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 1px;
+    border-radius: 4px;
+}
+
+.featured-main h2 a {
+    font-size: 28px;
+}
+
+h2 a {
+    font-size: 18px;
+    color: var(--dark-color);
+    font-weight: 700;
+}
+
+h2 a:hover {
+    color: var(--link-color);
+}
+
+
+
+/* Latest Post  */
+
+.latest-post-item {}
+
+.post-meta span,
+.post-meta a {
+    font-size: 12px;
+}
+
+.post-meta a {
+    margin: 0 2px;
+}
+
+/* Responsive */
+
+@media (max-width:1199.98px) {}
+
+
+/* For iPad Pro */
+@media (max-width:991.98px) {
+
+   
+}
+
+/* For iPad - Small device*/ 
+
+@media (max-width:768.98px) {
+
+   
+}
+
+@media (max-width:575.98px) {
+    .featured-main h2 a{
+        font-size: 24px;
+    }
+
+    .latest-post-item p, .latest-post-item .post-meta{
+        display: none;
+    }
+}

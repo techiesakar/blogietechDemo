@@ -1,0 +1,70 @@
+/* Grid */
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 0.5rem;
+}
+
+.span-4 {
+	-ms-grid-column: span 4;
+	grid-column: span 4;
+}
+
+.span-6 {
+	-ms-grid-column: span 6;
+	grid-column: span 6;
+}
+
+.span-8 {
+	-ms-grid-column: span 8;
+	grid-column: span 8;
+}
+
+.span-12 {
+	-ms-grid-column: span 12;
+	grid-column: span 12;
+	-ms-grid-column-span: 12;
+}
+
+
+
+/* Responsive */
+
+@media (max-width:1199.98px) {}
+
+
+/* For iPad Pro */
+@media (max-width:991.98px) {
+	.span-md-12 {
+		grid-column: span 12;
+	}
+
+	.span-md-6 {
+		grid-column: span 6;
+	}
+
+	.grid-md {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-gap: 0.5rem;
+	}
+
+}
+
+/* For iPad - Small device*/
+@media (max-width:768.98px) {
+	.span-sm-12 {
+		grid-column: span 12;
+	}
+
+	.span-sm-6 {
+		grid-column: span 6;
+	}
+}
+
+@media (max-width:575.98px) {
+	.span-xs{
+		grid-column: span 12;
+	}
+}

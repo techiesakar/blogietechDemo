@@ -1,0 +1,75 @@
+@import "assets/fonts/Sofia/sofia.css";
+@import url('assets/css/global.css');
+@import url('assets/css/grid.css');
+@import url('assets/css/content.css');
+@import url('assets/css/header.css');
+@import url('assets/css/search.css');
+@import url('assets/css/blog-banner.css');
+@import url('assets/css/sidebar.css');
+
+
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+/* Default */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+    transition: 0.3s ease all;
+}
+
+h1,
+h2 {
+    color: var(--dark-color);
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 10px 0;
+    letter-spacing: -0.005rem;
+}
+
+
+
+p {
+    color: var(--dark-color);
+    margin: 10px 0;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.005rem;
+}
+
+img {
+    width: 100%;
+}
+
+code,
+pre {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
+
+/* Default Ends */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+    background-color: var(--light-color);
+    letter-spacing: 0.005em;;
+}

@@ -1,0 +1,65 @@
+.sidebar .sidebar-featured-post,
+.sticky-sidebar {
+    background-color: #fff;
+    padding: 24px 24px 40px 30px;
+
+}
+
+.sidebar .widget-title {
+    font-size: 24px;
+    color: var(--dark-color);
+    font-weight: 700;
+}
+
+.sidebar a {
+    color: var(--secondary-color);
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.sidebar li {
+    padding: 10px 0;
+    border-bottom: 2px solid #eeeff1;
+}
+
+.sidebar a:hover {
+    color: var(--link-color);
+}
+
+.sticky-sidebar {
+    margin-top: 8px;
+    position: sticky;
+    top: 0;
+}
+
+@media (max-width:1199.98px) {}
+
+
+/* For iPad Pro */
+@media (max-width:991.98px) {
+    .sticky-sidebar {
+        margin-top: 0;
+    }
+}
+
+/* For iPad - Small device*/
+@media (max-width:768.98px) {}
+
+@media (max-width:575.98px) {
+   
+
+    .sticky-sidebar,
+    .sidebar-featured-post {
+        padding: 8px !important;
+    }
+
+    .sidebar ul {
+        padding-left: 18px;
+        list-style: outside;
+        color: var(--link-color);
+    }
+
+    .sidebar li {
+        border-bottom: none;
+    }
+}

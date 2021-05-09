@@ -1,0 +1,255 @@
+:root {
+    /* color */
+    --primary-color: #4267CF;
+    --secondary-color: #6C757D;
+    --dark-color: #393939;
+    --light-color: #F6F7F9;
+    --success-color: #5cb85c;
+    --danger-color: #ff7f66;
+    --warning-color: #FFC107;
+    --link-color: #ff7f66;
+    --nav-color: #32466b;
+    --btn-hover-color: #ff7f66;
+
+    /* Font */
+    --font-title: 'Sofia Pro';
+    --font-body: 'Sofia Pro';
+}
+
+
+
+/* background color */
+.bg-primary {
+    background-color: var(--primary-color);
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color);
+}
+
+.bg-dark {
+    background-color: var(--dark-color);
+}
+
+.bg-light {
+    background-color: var(--light-color);
+}
+
+.bg-success {
+    background-color: var(--success-color);
+}
+
+.bg-danger {
+    background-color: var(--danger-color);
+}
+
+.bg-warning {
+    background-color: var(--warning-color);
+}
+
+/* Container  */
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+.container-fluid {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* Container Ends  */
+/* --------------------------------------- */
+/* Column Starts */
+.col,
+[class^="col-"] {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+}
+
+.col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.col-1 {
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+}
+
+.col-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+.col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.col-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+}
+
+.col-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+.col-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.col-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+}
+
+.col-11 {
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* Column Ends */
+/* ---------------------------------------------------------------------- */
+/* Flex */
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-3 {
+    flex: 3;
+}
+
+/* Flex Order */
+.o-1 {
+    order: 1;
+}
+
+.o-2 {
+    order: 2;
+}
+
+.o-3 {
+    order: 3;
+}
+
+.o-4 {
+    order: 4;
+}
+
+/* Flex Order Ends */
+/* Flex End */
+
+/* Juntify Content */
+.jc-s{
+    justify-content: start;
+}
+.jc-c{
+    justify-content: center;
+}
+/* ----------------------------------------------------------------------- */
+
+
+/* Typography */
+
+.unselectable {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.d-none{
+    display: none;
+}
+
+/* Button btn  */
+
+.btn {
+    display: inline-block;
+    padding: 7px 12px;
+    border: none;
+    outline: none;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+}
+.btn:hover{
+    background: var(--danger-color);
+}
+
+.btn.btn-danger{
+    background-color: var(--danger-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+}
+
+/* Responsive */
+
+/* @media (max-width:1199.98px) {
+    .container{
+        max-width: 1170px;
+    }
+} */
+
+
+/* For Medium Devices */
+@media (max-width:991.98px) {
+    .container{
+        max-width: 970px;
+    }
+}
+
+@media (max-width:768.98px) {
+    .container{
+        max-width: 750px;
+    }
+}
+
+  
+
+@media (max-width:575.98px) {}

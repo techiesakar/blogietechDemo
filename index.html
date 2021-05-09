@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/08ee8b8de4.js" crossorigin="anonymous"></script>
+	<title>Search Overlay with Content</title>
+</head>
+
+<body class="home">
+	<header id="header">
+		<div class="container grid">
+			<div id="menuBtn" class="menu-btn d-none"> <i onclick="openMenu()" class="menu-icon fas fa-bars"></i>
+			</div>
+			<div class="logo">
+				<a href="" class="logo-link unselectable">
+					<!-- <img src="" alt=""> -->
+					<h1 class="site-name">
+						<span class="site-name-first">Blogie</span>
+						<span class="site-name-last">Tech</span>
+					</h1>
+				</a>
+			</div>
+			<nav id="site-nav" class="main-nav collapse-menu">
+				<ul class="primary-menu">
+					<li class="nav-item"><a class="active nav-link" href="">Home</a>
+					</li>
+					<li class="nav-item has-sub-menu"><a class="main-menu nav-link" href="">BCA</a>
+						<ul class="sub-menu">
+							<li class="sub-menu-item"> <a class="nav-link" href="">Sub Menu 1</a>
+							</li>
+							<li class="sub-menu-item"> <a class="nav-link" href="">Sub Menu 2</a>
+							</li>
+							<li class="sub-menu-item"> <a class="nav-link" href="">Sub Menu 3</a>
+							</li>
+							<li class="sub-menu-item"> <a class="nav-link" href="">Sub Menu</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item"><a class="main-menu nav-link" href="">Wordpress</a>
+					</li>
+					<li class="nav-item"><a class="main-menu nav-link" href="">How To</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="search openBtn"> <i onclick="openSearch()" class="search-icon fas fa-search"></i>
+			</div>
+		</div>
+		<!-- Container Ends -->
+		<!-- Navigation Menu For Mobile Devices -->
+		<ul id="mobileMenu" class="mobile-menu">
+			<li class="nav-item"> <a class="nav-link active" href="">Home</a>
+			</li>
+			<li class="nav-item has-sub-menu"> <a href="#" class="mobile-main-menu nav-link"
+					onclick="openSubMenu();return false;">BCA</a>
+				<ul id="mobileSubMenu" class="sub-menu d-none">
+					<li class="sub-menu-item"> <a class="nav-link" href="#">Sub Menu 1</a>
+					</li>
+					<li class="sub-menu-item"> <a class="nav-link" href="#">Sub Menu 2</a>
+					</li>
+					<li class="sub-menu-item"> <a class="nav-link" href="#">Sub Menu 3</a>
+					</li>
+				</ul>
+			</li>
+			<li class="nav-item"> <a class="nav-link" href="">Wordpress</a>
+			</li>
+			<li class="nav-item"> <a class="nav-link" href="">How To</a>
+			</li>
+			<div class="menuclose" role="button" onclick="closeMenu();">X</div>
+		</ul>
+		<!-- Navigation Menu For Mobile Devices Ends -->
+	</header>
+	<!-- Search Overlay Starts -->
+	<div id="myOverlay" class="full-overlay">
+		<div class="container search-container">
+			<div class="form-wrapper flex">
+				<form class="search-form flex"> <i class="search-icon fas fa-search"></i>
+					<input id="searchInput" class="search-field" placeholder="Search Here..." type="search"
+						autofocus="">
+					<input class="search-btn" type="submit" value="Go">
+				</form>
+				<div class="closebtn" role="button" onclick="closeSearch()">X</div>
+			</div>
+			<div class="article-wrapper grid-12">
+				<h3>Most Searched Articles</h3>
+				<a href="#">
+					<div>
+						<h4>10 Best Free Blogging Sites to Build Your Blog for Free in 2021: Tested, Compared and
+							Reviewed</h4>
+						<p>Looking for some free blog sites to help you start sharing your writing with the world?
+							Whether you just ...</p>
+					</div>
+				</a>
+				<a href="#">
+					<div>
+						<h4>How to Create and Start a WordPress Blog in 15 Minutes or Less (Step by Step)</h4>
+						<p>So you want to create a WordPress blog… Congratulations! WordPress is an excellent solution
+							for how to start a ...</p>
+					</div>
+				</a>
+				<a href="#">
+					<div>
+						<h4>The Complete Personal Blog Guide: How to Start a Personal Blog on WordPress</h4>
+						<p>There’s plenty of space on the internet for everybody. People love to share ideas, give shape
+							to their thoughts, ...</p>
+					</div>
+				</a>
+			</div>
+			<div class="article-wrapper grid-12">
+				<h3>Most Recent Articles</h3>
+				<a href="#">
+					<div>
+						<h4>How to Make a WordPress Website: Step-by-Step Guide for Beginners</h4>
+						<p>Believe it or not, but knowing how to make a website from scratch is one of the more
+							essential skills you ....</p>
+					</div>
+				</a>
+				<a href="#">
+					<div>
+						<h4>6 Fastest WordPress Hosting Companies Compared (Real Test Data)</h4>
+						<p>So you want to create a WordPress blog… Congratulations! WordPress is an excellent solution
+							for how to start a ...</p>
+					</div>
+				</a>
+				<a href="#">
+					<div>
+						<h4>The Complete Personal Blog Guide: How to Start a Personal Blog on WordPress</h4>
+						<p>There’s plenty of space on the internet for everybody. People love to share ideas, give shape
+							to their thoughts, ...</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- Search Overlay Ends -->
+	<!-- banner starts -->
+	<div class="blog-banner">
+		<div class="container">
+			<h1>Welcome To Sakar's Blog</h1>
+			<p class="subtitle">Ahoy! You've found our treasure trove of WordPress tutorials and tips for Beginners and
+				Experts.</p>
+		</div>
+		<div class="banner-radius">
+			<img src="assets/svg/border.svg" alt="">
+		</div>
+	</div>
+
+	<!-- banner ends -->
+	<!-- Content Starts -->
+
+	<div class="container content-wrapper grid">
+		<div class="main span-8 span-md-12">
+			<div class="featured grid">
+				<article class="featured-main span-12">
+					<div class="post-categories">
+						<a href="">Blogging</a>
+					</div>
+					<h2><a href="">Data Says: When Is the Best Time to Post a Blog in 2021?</a></h2>
+					<p>If you’re publishing high-quality blog content, you’re already off to a great start in terms of
+						online marketing. However, many factors will determine your success, such as knowing the best
+						time to post a blog.</p>
+					<a class="btn btn-primary " href="#">Read More</a>
+				</article>
+				<article class="featured-sub span-6">
+					<div class="featured-img">
+						<a href=""><img src="assets/img/best-grammar-checker-free.jpeg" alt=""></a>
+					</div>
+					<div class="post-categories">
+						<a href="">Blogging</a>
+					</div>
+					<h2><a href="">Substack vs Ghost: Best Place to Create a Newsletter or Blog? (2021)</a></h2>
+				</article>
+				<article class="featured-sub span-6">
+					<div class="featured-img">
+						<a href=""><img src="assets/img/How-to-set-up-Google-Analytics-WordPress.jpeg" alt=""></a>
+					</div>
+					<div class="post-categories">
+						<a href="">Blogging</a>
+					</div>
+					<h2><a href="">How to Set Up Google Analytics in WordPress for Beginners</a></h2>
+				</article>
+			</div>
+
+			<!-- latest Post Starts -->
+			<div class="latest-post grid">
+				<article class="latest-post-item span-12 grid">
+					<div class="post-thumb flex span-4 span-xs">
+						<a href=""><img src="assets/img/How-to-start-an-online-store.jpeg" alt=""></a>
+					</div>
+					<div class="post-content span-8 span-xs">
+						<h2><a href="">How to Start an Online Store: Your Ultimate Beginner’s Guide for 2021</a></h2>
+						<div class="post-meta flex jc-s">
+							<div class="meta-author">
+								<span>BY</span>
+								<a href="">SAKAR ARYAL</a>
+							</div>
+							<div class="meta-date">
+								<a href=""><i class="fa fa-clock-o"></i> May 13, 2020</a>
+							</div>
+						</div>
+						<div class="post-excerpt">
+							<p>If you’re looking up how to start an online store, you should seriously consider running
+								it on WordPress. </p>
+						</div>
+					</div>
+				</article>
+				<article class="latest-post-item span-12 grid">
+					<div class="post-thumb flex span-4 span-xs">
+						<a href=""><img src="assets/img/How-to-start-an-online-store.jpeg" alt=""></a>
+					</div>
+					<div class="post-content span-8 span-xs">
+						<h2><a href="">How to Start an Online Store: Your Ultimate Beginner’s Guide for 2021</a></h2>
+						<div class="post-meta flex jc-s">
+							<div class="meta-author">
+								<span>BY</span>
+								<a href="">SAKAR ARYAL</a>
+							</div>
+							<div class="meta-date">
+								<a href=""><i class="fa fa-clock-o"></i> May 13, 2020</a>
+							</div>
+						</div>
+						<div class="post-excerpt">
+							<p>If you’re looking up how to start an online store, you should seriously consider running
+								it on WordPress. </p>
+						</div>
+					</div>
+				</article>
+				<article class="latest-post-item span-12 grid">
+					<div class="post-thumb flex span-4 span-xs">
+						<a href=""><img src="assets/img/How-to-start-an-online-store.jpeg" alt=""></a>
+					</div>
+					<div class="post-content span-8 span-xs">
+						<h2><a href="">How to Start an Online Store: Your Ultimate Beginner’s Guide for 2021</a></h2>
+						<div class="post-meta flex jc-s">
+							<div class="meta-author">
+								<span>BY</span>
+								<a href="">SAKAR ARYAL</a>
+							</div>
+							<div class="meta-date">
+								<a href=""><i class="fa fa-clock-o"></i> May 13, 2020</a>
+							</div>
+						</div>
+						<div class="post-excerpt">
+							<p>If you’re looking up how to start an online store, you should seriously consider running
+								it on WordPress. </p>
+						</div>
+					</div>
+				</article>
+			</div>
+			<!-- latest post ends -->
+		</div>
+		<aside class="sidebar span-4 span-md-12 grid-md">
+			<div class="sidebar-featured-post span-md-6 span-xs">
+				<p class="widget-title">Featured Posts</p>
+				<ul>
+					<li><a href="">Create a Blog Guide</a> </li>
+					<li><a href="">Best Free Email Marketing Services</a> </li>
+					<li><a href="">WordPress .com vs .org</a> </li>
+					<li><a href="">Best Domain Registrars</a> </li>
+					<li><a href="">How to Start an Online Store</a> </li>
+				</ul>
+			</div>
+			<div class="sticky-sidebar span-md-6 span-xs">
+				<div class="latest-post">
+					<p class="widget-title">Latest Posts</p>
+					<ul>
+						<li><a href="">Create a Blog Guide</a> </li>
+						<li><a href="">Best Free Email Marketing Services</a> </li>
+						<li><a href="">WordPress .com vs .org</a> </li>
+						<li><a href="">Best Domain Registrars</a> </li>
+						<li><a href="">How to Start an Online Store</a> </li>
+					</ul>
+				</div>
+			</div>
+		</aside>
+	</div>
+	<!-- Content Wrapper Ends -->
+
+
+
+	<script src="assets/js/navscroll.js"></script>
+	<script src="assets/js/header.js"></script>
+
+
+</body>
+
+</html>
