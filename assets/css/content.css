@@ -55,6 +55,7 @@ h2 a:hover {
 .load-more-wrap {
     display: flex;
     justify-content: center;
+    margin: 12px 0;
 }
 
 .load-more-wrap a {

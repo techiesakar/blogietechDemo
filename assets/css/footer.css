@@ -90,6 +90,18 @@ footer ul li a:hover::after {
     width: 100%;
 }
 
+.copyright{
+    /* background-color: #fff; */
+}
+
+/* .copyright .container{
+    padding: 0;
+} */
+
+.copyright p{
+   text-align: center;
+   font-size: 14px;
+}
 @media (max-width:1199.98px) {}
 
 
