@@ -6,6 +6,7 @@
 @import url('assets/css/search.css');
 @import url('assets/css/blog-banner.css');
 @import url('assets/css/sidebar.css');
+@import url('assets/css/footer.css');
 
 
 
@@ -15,6 +16,9 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 /* Default */
 ul {
     list-style-type: none;
@@ -72,4 +76,5 @@ body {
     font-family: var(--font-body);
     background-color: var(--light-color);
     letter-spacing: 0.005em;;
+    position: relative;
 }

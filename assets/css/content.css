@@ -48,30 +48,58 @@ h2 a:hover {
     margin: 0 2px;
 }
 
+/* Latest Post Ends */
+
+/* Load More */
+
+.load-more-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.load-more-wrap a {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 8px 12px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.load-more-wrap a:after{
+    font-size: 12px;
+    font-family: "Font Awesome 5 Free";
+    content:'\f078';
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    left: 7px;
+    padding: 2px;
+    font-weight: 900;
+}
+
+
+
+/* Load More Ends */
+
 /* Responsive */
 
 @media (max-width:1199.98px) {}
 
 
 /* For iPad Pro */
-@media (max-width:991.98px) {
+@media (max-width:991.98px) {}
 
-   
-}
+/* For iPad - Small device*/
 
-/* For iPad - Small device*/ 
-
-@media (max-width:768.98px) {
-
-   
-}
+@media (max-width:768.98px) {}
 
 @media (max-width:575.98px) {
-    .featured-main h2 a{
+    .featured-main h2 a {
         font-size: 24px;
     }
 
-    .latest-post-item p, .latest-post-item .post-meta{
+    .latest-post-item p,
+    .latest-post-item .post-meta {
         display: none;
     }
 }

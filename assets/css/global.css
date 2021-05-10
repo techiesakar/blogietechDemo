@@ -10,6 +10,7 @@
     --link-color: #ff7f66;
     --nav-color: #32466b;
     --btn-hover-color: #ff7f66;
+    --footer-bg-color: #32476B;
 
     /* Font */
     --font-title: 'Sofia Pro';
@@ -227,6 +228,28 @@
 .btn-primary {
     background-color: var(--primary-color);
 }
+
+/* Scroll Button  */
+#myBtn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1020;
+}
+
+#myBtn:hover{
+    background-color: var(--btn-hover-color);
+}
+/* Scroll Button Ends */
 
 /* Responsive */
 
