@@ -25,6 +25,30 @@ footer .container {
     padding: 30px;
 }
 
+footer .social-profiles a{
+    display: inline-block;
+    margin-right: 4px;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    font-size: 32px;
+}
+
+footer .social-profiles a.facebook{
+color: #3A5794;
+}
+
+footer .social-profiles a.instagram{
+    color: #EB4C4D;
+}
+footer .social-profiles a.twitter{
+    color: #1C9CEA;
+}
+
+footer .social-profiles a.youtube{
+    color: #F70000;
+}
+
 footer h3 {
     text-align: center;
 }
@@ -71,19 +95,21 @@ footer ul li a:hover::after {
 
 /* For iPad Pro */
 @media (max-width:991.98px) {
-   
 
-/* For iPad - Small device*/
-@media (max-width:768.98px) {
-    .company-detail{
-        max-width: 360px;
-        margin: -60px auto 0 auto;
-    }
-}
 
-@media (max-width:575.98px) {
-    .categories, .useful-links{
-        padding: 12px;
+    /* For iPad - Small device*/
+    @media (max-width:768.98px) {
+        .company-detail {
+            max-width: 360px;
+            margin: -60px auto 0 auto;
+        }
     }
 
-}
+    @media (max-width:575.98px) {
+
+        .categories,
+        .useful-links {
+            padding: 12px;
+        }
+
+    }
