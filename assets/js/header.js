@@ -1,8 +1,6 @@
 function openSearch() {
-    document.getElementById("searchInput").focus();
-}
-
-function openSearch() {
+    var input = document.getElementById("searchInput");
+    setTimeout(() => input.focus(), 100);
     var element = document.getElementById("myOverlay");
     element.classList.add("active");
 }
