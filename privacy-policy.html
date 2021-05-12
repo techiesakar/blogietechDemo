@@ -1,0 +1,378 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <script src="https://kit.fontawesome.com/08ee8b8de4.js" crossorigin="anonymous"></script>
+      <title>Privacy Policy</title>
+   </head>
+   <body class="home">
+      <header id="header">
+         <div class="container grid">
+            <div id="menuBtn" class="menu-btn d-none"> <i onclick="openMenu()" class="menu-icon fas fa-bars"></i>
+            </div>
+            <div class="logo">
+               <a href="index.html" class="logo-link unselectable">
+                  <!-- <img src="" alt=""> -->
+                  <h1 class="site-name">
+                     <span class="site-name-first">Blogie</span>
+                     <span class="site-name-last">Tech</span>
+                  </h1>
+               </a>
+            </div>
+            <nav id="site-nav" class="main-nav collapse-menu">
+               <ul class="primary-menu">
+                  <li class="nav-item"><a class="active nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item has-sub-menu">
+                     <a class="main-menu nav-link" href="category.html">BCA</a>
+                     <ul class="sub-menu">
+                        <li class="sub-menu-item"> <a class="nav-link" href="category.html">Sub Menu 1</a>
+                        </li>
+                        <li class="sub-menu-item"> <a class="nav-link" href="category.html">Sub Menu 2</a>
+                        </li>
+                        <li class="sub-menu-item"> <a class="nav-link" href="category.html">Sub Menu 3</a>
+                        </li>
+                        <li class="sub-menu-item"> <a class="nav-link" href="category.html">Sub Menu</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="nav-item"><a class="main-menu nav-link" href="category.html">Wordpress</a>
+                  </li>
+                  <li class="nav-item"><a class="main-menu nav-link" href="category.html">How To</a>
+                  </li>
+               </ul>
+            </nav>
+            <div class="search openBtn"> <i onclick="openSearch()" class="search-icon fas fa-search"></i>
+            </div>
+         </div>
+         <!-- Container Ends -->
+         <!-- Navigation Menu For Mobile Devices -->
+         <ul id="mobileMenu" class="mobile-menu">
+            <li class="nav-item"> <a class="nav-link active" href="">Home</a>
+            </li>
+            <li class="nav-item has-sub-menu">
+               <a href="#" class="mobile-main-menu nav-link"
+                  onclick="openSubMenu();return false;">BCA</a>
+               <ul id="mobileSubMenu" class="sub-menu d-none">
+                  <li class="sub-menu-item"> <a class="nav-link" href="#">Sub Menu 1</a>
+                  </li>
+                  <li class="sub-menu-item"> <a class="nav-link" href="#">Sub Menu 2</a>
+                  </li>
+                  <li class="sub-menu-item"> <a class="nav-link" href="#">Sub Menu 3</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="nav-item"> <a class="nav-link" href="">Wordpress</a>
+            </li>
+            <li class="nav-item"> <a class="nav-link" href="">How To</a>
+            </li>
+            <div class="menuclose" role="button" onclick="closeMenu();">X</div>
+         </ul>
+         <!-- Navigation Menu For Mobile Devices Ends -->
+      </header>
+      <main>
+         <!-- Search Overlay Starts -->
+         <div id="myOverlay" class="full-overlay">
+            <div class="container search-container">
+               <div class="form-wrapper flex">
+                  <form class="search-form flex"> <i class="search-icon fas fa-search"></i>
+                     <input id="searchInput" class="search-field" placeholder="Search Here..." type="search"
+                        autofocus="">
+                     <input class="search-btn" type="submit" value="Go">
+                  </form>
+                  <div class="closebtn" role="button" onclick="closeSearch()">X</div>
+               </div>
+               <div class="article-wrapper grid-12">
+                  <h3>Most Searched Articles</h3>
+                  <a href="#">
+                     <div>
+                        <h4>10 Best Free Blogging Sites to Build Your Blog for Free in 2021: Tested, Compared and
+                           Reviewed
+                        </h4>
+                        <p>Looking for some free blog sites to help you start sharing your writing with the world?
+                           Whether you just ...
+                        </p>
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div>
+                        <h4>How to Create and Start a WordPress Blog in 15 Minutes or Less (Step by Step)</h4>
+                        <p>So you want to create a WordPress blog… Congratulations! WordPress is an excellent
+                           solution
+                           for how to start a ...
+                        </p>
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div>
+                        <h4>The Complete Personal Blog Guide: How to Start a Personal Blog on WordPress</h4>
+                        <p>There’s plenty of space on the internet for everybody. People love to share ideas, give
+                           shape
+                           to their thoughts, ...
+                        </p>
+                     </div>
+                  </a>
+               </div>
+               <div class="article-wrapper grid-12">
+                  <h3>Most Recent Articles</h3>
+                  <a href="#">
+                     <div>
+                        <h4>How to Make a WordPress Website: Step-by-Step Guide for Beginners</h4>
+                        <p>Believe it or not, but knowing how to make a website from scratch is one of the more
+                           essential skills you ....
+                        </p>
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div>
+                        <h4>6 Fastest WordPress Hosting Companies Compared (Real Test Data)</h4>
+                        <p>So you want to create a WordPress blog… Congratulations! WordPress is an excellent
+                           solution
+                           for how to start a ...
+                        </p>
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div>
+                        <h4>The Complete Personal Blog Guide: How to Start a Personal Blog on WordPress</h4>
+                        <p>There’s plenty of space on the internet for everybody. People love to share ideas, give
+                           shape
+                           to their thoughts, ...
+                        </p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <!-- Search Overlay Ends -->
+         <!-- banner starts -->
+         <div class="blog-banner">
+            <div class="container grid">
+               <h1 class="page-title span-10">Privacy Policy</h1>
+            </div>
+            <div class="banner-radius">
+               <img src="assets/svg/border.svg" alt="">
+            </div>
+         </div>
+         <!-- banner ends -->
+         <!-- Content Starts -->
+         <div class="single-post container content-wrapper grid">
+            <div class="main span-8 span-md-12">
+               <!-- Single Post Content Goes Here -->
+               <div class="single-post-inner">
+                  <!-- single post content starts -->
+                  <article class="single-post-content">
+                     <p>At BlogieTech, accessible from https://blogietech.com/, one of our main priorities is the
+                        privacy
+                        of our visitors. This Privacy Policy document contains types of information that is
+                        collected
+                        and recorded by BlogieTech and how we use it.
+                     </p>
+                     <p>If you have additional questions or require more information about our Privacy Policy, do not
+                        hesitate to contact us.
+                     </p>
+                     <h2>Log Files
+                     </h2>
+                     <p>BlogieTech follows a standard procedure of using log files. These files log visitors when
+                        they
+                        visit websites. All hosting companies do this and a part of hosting services’ analytics. The
+                        information collected by log files include internet protocol (IP) addresses, browser type,
+                        Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the
+                        number of clicks. These are not linked to any information that is personally identifiable.
+                        The
+                        purpose of the information is for analyzing trends, administering the site, tracking users’
+                        movement on the website, and gathering demographic information.
+                     </p>
+                     <h2>Cookies and Web Beacons
+                     </h2>
+                     <p>Like any other website, BlogieTech uses ‘cookies’. These cookies are used to store
+                        information
+                        including visitors’ preferences, and the pages on the website that the visitor accessed or
+                        visited. The information is used to optimize the users’ experience by customizing our web
+                        page
+                        content based on visitors’ browser type and/or other information.
+                     </p>
+                     <p>For more general information on cookies, please read <a href="">“What Are Cookies” from
+                        Cookie
+                        Consent</a>.
+                     </p>
+                     <h2>Google DoubleClick DART Cookie
+                     </h2>
+                     <p> Google is one of a third-party vendor on our site. It also uses cookies, known as DART
+                        cookies,
+                        to serve ads to our site visitors based upon their visit to www.website.com and other sites
+                        on
+                        the internet. However, visitors may choose to decline the use of DART cookies by visiting
+                        the
+                        Google ad and content network Privacy Policy at the following URL –
+                        https://policies.google.com/technologies/ads
+                     </p>
+                     <h2>Our Advertising Partners
+                     </h2>
+                     <p>Some of advertisers on our site may use cookies and web beacons. Our advertising partners are
+                        listed below. Each of our advertising partners has their own Privacy Policy for their
+                        policies
+                        on user data. For easier access, we hyperlinked to their Privacy Policies below.
+                     </p>
+                     <ul>
+                        <li>Google <a href="">https://policies.google.com/technologies/ads</a>
+                        </li>
+                     </ul>
+                     <h2>Privacy Policies
+                     </h2>
+                     <p>You may consult this list to find the Privacy Policy for each of the advertising partners of
+                        BlogieTech.
+                     </p>
+                     <p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web
+                        Beacons
+                        that are used in their respective advertisements and links that appear on BlogieTech, which
+                        are
+                        sent directly to users’ browser. They automatically receive your IP address when this
+                        occurs.
+                        These technologies are used to measure the effectiveness of their advertising campaigns
+                        and/or
+                        to personalize the advertising content that you see on websites that you visit.
+                     </p>
+                     <p>Note that BlogieTech has no access to or control over these cookies that are used by
+                        third-party
+                        advertisers.
+                     </p>
+                     <h2>Third Party Privacy Policies
+                     </h2>
+                     <p>BlogieTech’s Privacy Policy does not apply to other advertisers or websites. Thus, we are
+                        advising you to consult the respective Privacy Policies of these third-party ad servers for
+                        more
+                        detailed information. It may include their practices and instructions about how to opt-out
+                        of
+                        certain options.
+                     </p>
+                     <p>You can choose to disable cookies through your individual browser options. To know more
+                        detailed
+                        information about cookie management with specific web browsers, it can be found at the
+                        browsers’
+                        respective websites. What Are Cookies?
+                     </p>
+                     <h2>Children’s Information
+                     </h2>
+                     <p>Another part of our priority is adding protection for children while using the internet. We
+                        encourage parents and guardians to observe, participate in, and/or monitor and guide their
+                        online activity.
+                     </p>
+                     <p>BlogieTech does not knowingly collect any Personal Identifiable Information from children
+                        under
+                        the age of 13. If you think that your child provided this kind of information on our
+                        website, we
+                        strongly encourage you to contact us immediately and we will do our best efforts to promptly
+                        remove such information from our records.
+                     </p>
+                     <h2>Online Privacy Policy Only
+                     </h2>
+                     <p>This Privacy Policy applies only to our online activities and is valid for visitors to our
+                        website with regards to the information that they shared and/or collect in BlogieTech. This
+                        policy is not applicable to any information collected offline or via channels other than
+                        this
+                        website.
+                     </p>
+                     <h2>Consent
+                     </h2>
+                     <p>By using our website, you hereby consent to our Privacy Policy and agree to its Terms and
+                        Conditions.
+                     </p>
+                  </article>
+                  <!-- single post content ends -->
+               </div>
+            </div>
+            <!-- Sidebar Starts -->
+            <aside class="sidebar span-4 span-md-12 grid-md">
+               <div class="sidebar-featured-post span-md-6 span-xs">
+                  <p class="widget-title">Featured Posts</p>
+                  <ul>
+                     <li><a href="single-post.html">Create a Blog Guide</a> </li>
+                     <li><a href="single-post.html">Best Free Email Marketing Services</a> </li>
+                     <li><a href="single-post.html">WordPress .com vs .org</a> </li>
+                     <li><a href="single-post.html">Best Domain Registrars</a> </li>
+                     <li><a href="single-post.html">How to Start an Online Store</a> </li>
+                  </ul>
+               </div>
+               <div class="sticky-sidebar span-md-6 span-xs">
+                  <div class="latest-post">
+                     <p class="widget-title">Latest Posts</p>
+                     <ul>
+                        <li><a href="single-post.html">Create a Blog Guide</a> </li>
+                        <li><a href="single-post.html">Best Free Email Marketing Services</a> </li>
+                        <li><a href="single-post.html">WordPress .com vs .org</a> </li>
+                        <li><a href="single-post.html">Best Domain Registrars</a> </li>
+                        <li><a href="single-post.html">How to Start an Online Store</a> </li>
+                     </ul>
+                  </div>
+               </div>
+            </aside>
+            <!-- Sidebar Ends -->
+         </div>
+         <!-- Content Wrapper Ends -->
+      </main>
+      <!-- Footer Section -->
+      <footer class="footer-wrapper">
+         <div class="container grid">
+            <div class="company-detail span-4 span-sm-12">
+               <div class="site-logo">
+                  <a href=""><img src="assets/img/site-logo.png" alt=""></a>
+               </div>
+               <div class="site-desc">
+                  <p>We’re a crew of WordPress professionals sharing our map to WordPress success with brilliant
+                     tutorials and tips.
+                  </p>
+               </div>
+               <div class="social-profiles">
+                  <a class="facebook" href=""><i class="fab fa-facebook"></i></a>
+                  <a class="twitter" href=""><i class="fab fa-twitter"></i></a>
+                  <a class="instagram" href=""><i class="fab fa-instagram"></i></a>
+                  <a class="youtube" href=""><i class="fab fa-youtube"></i></a>
+               </div>
+            </div>
+            <div class="categories span-4 span-sm-6 span-xs">
+               <h3>Top Categories</h3>
+               <ul>
+                  <li><a class="hover-line" href="">Category 1</a></li>
+                  <li><a class="hover-line" href="">Category 2</a></li>
+                  <li><a class="hover-line" href="">Category 3</a></li>
+                  <li><a class="hover-line" href="">Category 4</a></li>
+               </ul>
+            </div>
+            <div class="useful-links span-4 span-sm-6 span-xs">
+               <h3>Useful Links</h3>
+               <ul>
+                  <li><a class="hover-line" href="">About Us</a></li>
+                  <li><a class="hover-line" href="privacy-policy.html">Privacy Policy</a></li>
+                  <li><a class="hover-line" href="">Disclaimer</a></li>
+                  <li><a class="hover-line" href="">Terms & Conditions</a></li>
+               </ul>
+            </div>
+         </div>
+         <!-- Copyright Section -->
+         <div class="copyright">
+            <div class="container">
+               <p>Copyright &copy; 2021 <a class="site-name" href="">BlogieTech</a>| Created By <a
+                  class="developer-name" href="">Sakar Aryal</a></p>
+            </div>
+         </div>
+         <!-- Copyright Section Ends -->
+         <!-- Scroll To Top  -->
+         <div onclick="topFunction()" id="myBtn" class="scroll-top">
+            <i class="fas fa-chevron-up"></i>
+         </div>
+         <!-- Scroll To Top Ends -->
+      </footer>
+      <!-- Footer Section Ends -->
+      <!-- Javascript Section  -->
+      <script src="assets/js/onscroll.js"></script>
+      <script src="assets/js/header.js"></script>
+      <!-- Javascript Section Ends  -->
+   </body>
+</html>
+

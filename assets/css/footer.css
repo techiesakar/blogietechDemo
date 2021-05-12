@@ -1,5 +1,8 @@
 footer {
-    position: relative;
+    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: var(--footer-bg-color);
     width: 100%;
     margin-top: 80px;
@@ -11,7 +14,7 @@ footer .container {
 
 .company-detail {
     margin-top: -60px;
-    background: #fff;
+    background: #FAFAFA;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
@@ -25,27 +28,33 @@ footer .container {
     padding: 30px;
 }
 
-footer .social-profiles a{
+footer .social-profiles a,
+.single-post .author-info a {
     display: inline-block;
     margin-right: 4px;
-    height: 38px;
-    width: 38px;
+    height: 32px;
+    width: 32px;
     border-radius: 50%;
-    font-size: 32px;
+    font-size: 26px;
 }
 
-footer .social-profiles a.facebook{
-color: #3A5794;
+footer .social-profiles a.facebook,
+.single-post a.facebook {
+    color: #3A5794;
 }
 
-footer .social-profiles a.instagram{
+footer .social-profiles a.instagram,
+.single-post a.instagram {
     color: #EB4C4D;
 }
-footer .social-profiles a.twitter{
+
+footer .social-profiles a.twitter,
+.single-post a.twitter {
     color: #1C9CEA;
 }
 
-footer .social-profiles a.youtube{
+footer .social-profiles a.youtube,
+.single-post a.youtube {
     color: #F70000;
 }
 
@@ -70,37 +79,25 @@ footer li {
     margin-bottom: 12px;
 }
 
-footer a {
-    position: relative;
+
+.copyright {
+    background: rgb(49, 47, 47);
 }
 
-footer ul li a::after,
-.copyright a::after {
-    position: absolute;
-    display: block;
-    width: 0;
-    margin-top: 2px;
-    height: 2px;
-    background: rgba(255, 255, 255, 0.7);
-    content: "";
-    transition: width 0.3s;
+.copyright p {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+    padding: 4px 0;
 }
 
-footer ul li a:hover::after {
-    width: 100%;
+.copyright a {
+    color: var(--link-color);
 }
 
-.copyright{
-    /* background-color: #fff; */
-}
-
-/* .copyright .container{
-    padding: 0;
-} */
-
-.copyright p{
-   text-align: center;
-   font-size: 14px;
+.copyright span{
+    margin: 0 2px;
 }
 @media (max-width:1199.98px) {}
 
@@ -125,3 +122,4 @@ footer ul li a:hover::after {
         }
 
     }
+}

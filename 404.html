@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/08ee8b8de4.js" crossorigin="anonymous"></script>
+    <title>BlogieTech</title>
+</head>
+
+<body class="home">
+    <div class="main-container">
+        <header id="header">
+            <div class="container grid">
+                <div id="menuBtn" class="menu-btn d-none"> <i onclick="openMenu()" class="menu-icon fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <a href="index.html" class="logo-link unselectable">
+                        <!-- <img src="" alt=""> -->
+                        <h1 class="site-name">
+                            <span class="site-name-first">Blogie</span>
+                            <span class="site-name-last">Tech</span>
+                        </h1>
+                    </a>
+                </div>
+                <nav id="site-nav" class="main-nav collapse-menu">
+                    <ul class="primary-menu">
+                        <li class="nav-item"><a class="active nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item has-sub-menu">
+                            <a class="main-menu nav-link" href="category.html">BCA</a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item"> <a class="nav-link" href="category.html">Sub Menu 1</a>
+                                </li>
+                                <li class="sub-menu-item"> <a class="nav-link" href="category.html">Sub Menu 2</a>
+                                </li>
+                                <li class="sub-menu-item"> <a class="nav-link" href="category.html">Sub Menu 3</a>
+                                </li>
+                                <li class="sub-menu-item"> <a class="nav-link" href="category.html">Sub Menu</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="main-menu nav-link" href="category.html">Wordpress</a>
+                        </li>
+                        <li class="nav-item"><a class="main-menu nav-link" href="category.html">How To</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="search openBtn"> <i onclick="openSearch()" class="search-icon fas fa-search"></i>
+                </div>
+            </div>
+            <!-- Container Ends -->
+            <!-- Navigation Menu For Mobile Devices -->
+            <ul id="mobileMenu" class="mobile-menu">
+                <li class="nav-item"> <a class="nav-link active" href="">Home</a>
+                </li>
+                <li class="nav-item has-sub-menu">
+                    <a href="#" class="mobile-main-menu nav-link" onclick="openSubMenu();return false;">BCA</a>
+                    <ul id="mobileSubMenu" class="sub-menu d-none">
+                        <li class="sub-menu-item"> <a class="nav-link" href="#">Sub Menu 1</a>
+                        </li>
+                        <li class="sub-menu-item"> <a class="nav-link" href="#">Sub Menu 2</a>
+                        </li>
+                        <li class="sub-menu-item"> <a class="nav-link" href="#">Sub Menu 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item"> <a class="nav-link" href="">Wordpress</a>
+                </li>
+                <li class="nav-item"> <a class="nav-link" href="">How To</a>
+                </li>
+                <div class="menuclose" role="button" onclick="closeMenu();">X</div>
+            </ul>
+            <!-- Navigation Menu For Mobile Devices Ends -->
+        </header>
+        <main>
+            <div class="container">
+                <section class="error-404">
+                    <div class="page-header">
+                        <h1> Oops! That page can’t be found. </h1>
+                    </div>
+                    <div class="page-content">
+                        <p> It looks like nothing was found at this location. Maybe try to search for something else?
+                        </p>
+                    </div>
+                    <form>
+                        <input type="search" class="search-fields" placeholder="Search">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </section>
+            </div>
+            <!-- Search Overlay Starts -->
+            <div id="myOverlay" class="full-overlay">
+                <div class="container search-container">
+                    <div class="form-wrapper flex">
+                        <form class="search-form flex"> <i class="search-icon fas fa-search"></i>
+                            <input id="searchInput" class="search-field" placeholder="Search Here..." type="search"
+                                autofocus="">
+                            <input class="search-btn" type="submit" value="Go">
+                        </form>
+                        <div class="closebtn" role="button" onclick="closeSearch()">X</div>
+                    </div>
+                    <div class="article-wrapper grid-12">
+                        <h3>Most Searched Articles</h3>
+                        <a href="#">
+                            <div>
+                                <h4>10 Best Free Blogging Sites to Build Your Blog for Free in 2021: Tested, Compared
+                                    and
+                                    Reviewed
+                                </h4>
+                                <p>Looking for some free blog sites to help you start sharing your writing with the
+                                    world?
+                                    Whether you just ...
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <h4>How to Create and Start a WordPress Blog in 15 Minutes or Less (Step by Step)</h4>
+                                <p>So you want to create a WordPress blog… Congratulations! WordPress is an excellent
+                                    solution
+                                    for how to start a ...
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <h4>The Complete Personal Blog Guide: How to Start a Personal Blog on WordPress</h4>
+                                <p>There’s plenty of space on the internet for everybody. People love to share ideas,
+                                    give shape
+                                    to their thoughts, ...
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="article-wrapper grid-12">
+                        <h3>Most Recent Articles</h3>
+                        <a href="#">
+                            <div>
+                                <h4>How to Make a WordPress Website: Step-by-Step Guide for Beginners</h4>
+                                <p>Believe it or not, but knowing how to make a website from scratch is one of the more
+                                    essential skills you ....
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <h4>6 Fastest WordPress Hosting Companies Compared (Real Test Data)</h4>
+                                <p>So you want to create a WordPress blog… Congratulations! WordPress is an excellent
+                                    solution
+                                    for how to start a ...
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <h4>The Complete Personal Blog Guide: How to Start a Personal Blog on WordPress</h4>
+                                <p>There’s plenty of space on the internet for everybody. People love to share ideas,
+                                    give shape
+                                    to their thoughts, ...
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Search Overlay Ends -->
+        </main>
+        <!-- Footer Section -->
+        <footer class="footer-wrapper">
+            <div class="container grid">
+                <div class="company-detail span-4 span-sm-12">
+                    <div class="site-logo">
+                        <a href=""><img src="assets/img/site-logo.png" alt=""></a>
+                    </div>
+                    <div class="site-desc">
+                        <p>We’re a crew of WordPress professionals sharing our map to WordPress success with brilliant
+                            tutorials and tips.
+                        </p>
+                    </div>
+                    <div class="social-profiles">
+                        <a class="facebook" href=""><i class="fab fa-facebook"></i></a>
+                        <a class="twitter" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="instagram" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="youtube" href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="categories span-4 span-sm-6 span-xs">
+                    <h3>Top Categories</h3>
+                    <ul>
+                        <li><a href="category.html">Category 1</a></li>
+                        <li><a href="category.html">Category 2</a></li>
+                        <li><a href="category.html">Category 3</a></li>
+                        <li><a href="category.html">Category 4</a></li>
+                    </ul>
+                </div>
+                <div class="useful-links span-4 span-sm-6 span-xs">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="">Disclaimer</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <p>Copyright &copy; 2021 <a class="site-name" href="">BlogieTech</a> <span>|</span>Developed By <a
+                            class="developer-name" href="">Sakar Aryal</a></p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section Ends -->
+    </div>
+    <!-- Javascript Section  -->
+    <script src="assets/js/header.js"></script>
+    <!-- Javascript Section Ends  -->
+</body>
+
+</html>

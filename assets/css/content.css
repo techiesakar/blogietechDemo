@@ -13,7 +13,7 @@
 }
 
 article {
-    background: #fff;
+    background: #FAFAFA;
     padding: 24px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 1px;
     border-radius: 4px;
@@ -37,7 +37,7 @@ h2 a:hover {
 
 /* Latest Post  */
 
-.latest-post-item {}
+/* .latest-post-item {} */
 
 .post-meta span,
 .post-meta a {
